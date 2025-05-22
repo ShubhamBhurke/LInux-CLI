@@ -1,7 +1,7 @@
 # Linux-CLI
 Linux commands and their use. If you find I have missed something then please do tell me
-##Linux commands
-##Shows various Beginners level Linux Commands
+## Linux commands
+## Shows various Beginners level Linux Commands
 
 ### ls commands
 
