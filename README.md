@@ -1,79 +1,79 @@
 # Linux-CLI
 Linux commands and their use. If you find I have missed something then please do tell me
 ##Linux commands
-##Shows various Beginners level Linux Commands.
+##Shows various Beginners level Linux Commands
 
-###ls commands
+### ls commands
 
-####ls
+#### ls
 ls with no option list files and directories in bare format 
 
-####ls -l
+#### ls -l
  shows file or directory, size, modified date and time, 
  file or folder name and owner of file and its permission.
  
- #####ls -a
+ ##### ls -a
  
  shows the file directory including the hiiden files.
  
- #####ls -lh 
+ ##### ls -lh 
  Shows the file sizes in the human readable formats.
  
- #####ls -F
+ ##### ls -F
  puts '/' in front of those those which are directories.
  
- #####ls -r
+ ##### ls -r
  lists the files in reverse order.
  
- #####ls -R
+ ##### ls -R
  used to recursively list the sub-directories of each folder,sub-folder,etc
  
- #####ls -ltr
+ ##### ls -ltr
  Shows the latest modified files at top
  
- #####ls -ls
+ ##### ls -ls
  Displays the file sizes in descending orders.
  
- #####ls -i
+ ##### ls -i
  Displays the inode no. of the files.
  
- #####ls --version 
+ ##### ls --version 
  used to check the version of ls.
  
- #####ls --help
+ ##### ls --help
  used to display the help page of ls commands.
  
- #####ls -l /tmp
+ ##### ls -l /tmp
  Used to list the temporary files in the directory.
  
  ##### ls -n
  used to display the GID and UID of the files.
  
- ###lsblk
+ ### lsblk
  The first column lists device names, followed by corresponding major and minor device numbers, whether or not the device is removable (1 in case it is), size of the device, whether or not the device is read only, type of device (disk, partition, etc), and finally the device's mount point (if available).
  
- #####lsblk -a 
+ ##### lsblk -a 
  Displays the empty devices only.
  
- #####lsblk -b
+ ##### lsblk -b
  lists the size of each disk in the form of bytes.
  
- #####lsblk -z
+ ##### lsblk -z
  prints zone model for each device.
  
- #####lsblk -d 
+ ##### lsblk -d 
  skip the entries of slaves in listing.
  
- #####lsblk -i
+ ##### lsblk -i
  use ascii characters for tree formatting.
  
- #####lsblk -m 
+ ##### lsblk -m 
  displays info about device owner,group and mode.
  
- #####lsblk -o col1,col2
+ ##### lsblk -o col1,col2
  displays only the specified columns at a time.
  
- ###md5sum command
+ ### md5sum command
  #####md5sum/home/mandeep/test/test.cpp
  It is a very important command used to verify whether the person who created the file has not made any change to it before giving it to the other person.
  It generates 128-bit checksum .md5 file.
@@ -90,86 +90,86 @@ ls with no option list files and directories in bare format
  /home/mandeep/test/test.cpp: FAILED
  md5sum: WARNING: 1 computed checksum did NOT match
  
- ###uname command
+ ### uname command
  
- #####uname
+ ##### uname
  Prints Kernel name, network node hostname, kernel release date, kernel version, machine hardware name, hardware platform, operating system.
  
- #####uname -s
+ ##### uname -s
  prints the kernel name
  
- #####uname -n
+ ##### uname -n
  prints the hostname of the network node(current computer).
  
- #####uname -r
+ ##### uname -r
  prints the kernel release date.
  
- #####uname -v
+ ##### uname -v
  prints the version of the current kernel.
  
- #####uname -m
+ ##### uname -m
  prints the machine hardware name.
  
- #####uname -p
+ ##### uname -p
  It prints the type of the processor.
  
- #####uname -i
+ ##### uname -i
  It prints the platform of the hardware.
  
- #####uname -o
+ ##### uname -o
  It prints the name of the operating system.
  
- ###history commands
+ ### history commands
  
- #####history
+ ##### history
  Gives you a complete list of previously executed programs.
  
  
- #####export HISTTIMEFORMAT='%F %T  '
+ ##### export HISTTIMEFORMAT='%F %T  '
  displays the time and date of the history commands.
  
- #####export HISTCONTROL=ignoredups
+ ##### export HISTCONTROL=ignoredups
  **Ignore Duplicate** commands in history.
  
- #####history -c
+ ##### history -c
  **Clearing** all the entries from the bash history.
  
- #####history | grep *command_name*
+ ##### history | grep *command_name*
  Used to search for a specific command in history.
  
- #####*PRESS CTRL+R* source .bash_profile
+ ##### *PRESS CTRL+R* source .bash_profile
  Search for Prevoiusly Executed Commands
  
- #####!*line_no*
+ ##### !*line_no*
  Display the command runned at a specific line number.
  
- ###Sudo Commands
+ ### Sudo Commands
  
- #####sudo -v
+ ##### sudo -v
  The -V (version) option causes sudo to print the version number and exit.
  
- #####sudo -l 
+ ##### sudo -l 
  Prints the commands allowed (and forbidden) for the current host/user.
  
- #####sudo -L
+ ##### sudo -L
  List out the parameters that may be set in a Defaults line along with a short description for each. This option is useful in conjunction with grep.
  
- #####sudo -h
+ ##### sudo -h
  Displays a Guide for sudo commands.
  
- #####sudo -v
+ ##### sudo -v
  Update the user's timestamp, prompting for the user's password if necessary.
  
- #####sudo -k
+ ##### sudo -k
  Used to revoke a User's sudo permission.
  
- #####sudo -K
+ ##### sudo -K
  Used to removes the user's timestamp entirely.
  
- #####sudo -b
+ ##### sudo -b
  Removes the user's timestamp entirely.
  
- #####sudo -p
+ ##### sudo -p
  The -p (prompt) option allows you to override the default password prompt and use a custom one. The following percent ('%') escapes are supported:
  
  %u is expanded to the invoking user's login name;
@@ -182,386 +182,386 @@ ls with no option list files and directories in bare format
  
  %% (two consecutive % characters) are collapsed into a single % character. 
  
- #####sudo -c
+ ##### sudo -c
  Run the specified command with resources limited by the specified login class.
  
- #####sudo -a
+ ##### sudo -a
  Used to specify authentication type to validate a user.
  
- #####sudo -u
+ ##### sudo -u
  Used to run a specific command as a user other than root.
  
- #####sudo -s
+ ##### sudo -s
  Runs the Shell as specified by the SHELL Environment variable else as specified in the passwd file.
  
- #####sudo -H
+ ##### sudo -H
  Sets the Home Environment variable to the home directory of the target user(root by default)
  
- #####sudo -r
+ ##### sudo -r
  The -r (role) option causes the new (SELinux) security context to have the role specified by ROLE.
  
- #####sudo -S
+ ##### sudo -S
  Causes sudo to read the password from standard input instead of the terminal device.
  
- #####sudo --
+ ##### sudo --
  indicates that sudo should stop processing command line arguments.
  
- ###mkdir commands
+ ### mkdir commands
  
- #####mkdir *directory_name*
+ ##### mkdir *directory_name*
  Used to create a directory.
  
- ###touch commands
+ ### touch commands
  
- ####touch *file_name*
+ #### touch *file_name*
  Creates a file without having content in it.
  
- ####touch *file_name1 file_name2*
+ #### touch *file_name1 file_name2*
  Create multiple files at a time.
  
- #####touch -a *file_name*
+ ##### touch -a *file_name*
  Changes the access time of a file.
  
- #####touch -c *file_name*
+ ##### touch -c *file_name*
  Check whether a file is created or not. If not created then don’t create it. This command avoids creating files.
  
- #####touch -c-d *file_name*
+ ##### touch -c-d *file_name*
  Used to update access time and modification time.
  
- #####touch -m *file_name*
+ ##### touch -m *file_name*
  Used to update access time only.
  
- #####touch -r *second_file_name* *first_file_name*
+ ##### touch -r *second_file_name* *first_file_name*
  This command is used to use the timestamp of another file
  
- #####touch -t *YYMMDDHHMM* *fileName*
+ ##### touch -t *YYMMDDHHMM* *fileName*
  Used to create a file using a specified time.
  
- ###chmod commands
+ ### chmod commands
  
- #####chmod u=r *file_name*
+ ##### chmod u=r *file_name*
  Owner can only read the file.
  
- #####chmod u=rw *file_name*
+ ##### chmod u=rw *file_name*
  Owner cand read as well as write the file.
  
- ###chown commands
+ ### chown commands
  
- #####chown *owner_name file_name*
+ ##### chown *owner_name file_name*
  Used To change the ownership of the file.
  
- #####chown -c *file_name*
+ ##### chown -c *file_name*
  Reports when a file change is made.
  
- #####chown -v *file_name*
+ ##### chown -v *file_name*
  Used to show the verbose information for every file processed.
 
- #####chown :*group_name* *file_name*
+ ##### chown :*group_name* *file_name*
  Change group ownership.
  
- #####chown *owner_name*:*group_name* *file_name*
+ ##### chown *owner_name*:*group_name* *file_name*
  Change owner as well as group.
  
- #####chown --from=*owner_name1* *owner_name2* *file_name*
+ ##### chown --from=*owner_name1* *owner_name2* *file_name*
  Change the owner from particular ownership only.
  
- #####chown --from=:*group_name* *owner_name* *file_name*
+ ##### chown --from=:*group_name* *owner_name* *file_name*
  Change Group for a particular group.
  
- #####chown --reference=*file_name1* *file_name2*
+ ##### chown --reference=*file_name1* *file_name2*
  Copy ownership of one file to another.
  
- #####chown master:*group_name* *file_name2* *file_name3*
+ ##### chown master:*group_name* *file_name2* *file_name3*
  Change ownership of multiple files.
  
- ###apt commands
+ ### apt commands
  
- #####apt update
+ ##### apt update
  Used when we want to download package information from all configured sources.
  
- #####apt upgrade
+ ##### apt upgrade
  Used to install all available upgrades of all packages currently installed in the system.
  
- #####apt full-upgrade
+ ##### apt full-upgrade
  Used to upgrade the system as a whole, if the removal of already installed packages is required, then it will remove them.
  
- #####apt install *package_name*
+ ##### apt install *package_name*
  Used to install one or more packages.
  
- #####apt remove
+ ##### apt remove
  Used to remove or delete installed packages.
  
- #####apt purge
+ ##### apt purge
  Similar to remove. Specially removes configuration files of the removed packages.
  
- #####apt autoremove
+ ##### apt autoremove
  Used when the user wants to remove the packages that were installed as dependencies.
  
- #####apt search 
+ ##### apt search 
  Search for a Package.
  
- #####apt show
+ ##### apt show
  Used to show the information related to packages. like dependencies,installation size,sources.
  
- #####apt list
+ ##### apt list
  Used to display the packages that quality a certain criteria.
  
- #####apt edit-sorces
+ ##### apt edit-sorces
  Allows editing sources.list file.
  
- #####apt --help
+ ##### apt --help
  Display a guide for apt command.
  
- #####apt --version
+ ##### apt --version
  Displays the installed apt version.
  
- ###tar commands
+ ### tar commands
  
- #####tar cvf *file_name.tar* **extension_type*
+ ##### tar cvf *file_name.tar* **extension_type*
  Creates a tar file of all files of given extension.
  
- #####tar xvf *file_name*.tar
+ ##### tar xvf *file_name*.tar
  Extracts files from archives.
  
- #####tar cvzf *file_name*.tar.gz **extension_type*
+ ##### tar cvzf *file_name*.tar.gz **extension_type*
  Creates a tar file with .gz compression.
  
- #####tar xvzf *file_name*.tar.gz
+ ##### tar xvzf *file_name*.tar.gz
  Extracts files from tar.gz archive.
  
- #####tar cvfj *file_name*.tar.tbz *file_name*
+ ##### tar cvfj *file_name*.tar.tbz *file_name*
  Compresses and creates lightweight archive than gzip.
  
- #####tar xvfj *file_name*.tar
+ ##### tar xvfj *file_name*.tar
  Untar the file.
  
- #####tar tvf file.tar
+ ##### tar tvf file.tar
  View archive
  
- #####tar xvf *file_name*.tar "file_name" *"file_name"* 
+ ##### tar xvf *file_name*.tar "file_name" *"file_name"* 
       or 
- #####tar zxvf *file_name*.tar.gz "file_name" *"file_name"*
+ ##### tar zxvf *file_name*.tar.gz "file_name" *"file_name"*
       or 
- #####tar jxvf *file_name*.tar.tbz "file_name" *"file_name"*
+ ##### tar jxvf *file_name*.tar.tbz "file_name" *"file_name"*
  Untar multiple tar files.
  
- #####tar czf *file_name*.tar/tar.gz/tar.tbz | wc -c
+ ##### tar czf *file_name*.tar/tar.gz/tar.tbz | wc -c
  Display size of existing tar files in KB.
  
- ###cal command
+ ### cal command
  
- #####cal
+ ##### cal
  Display Calender of current month.
  
- #####cal *DD YYYY*
+ ##### cal *DD YYYY*
  Display calender of specified month.
  
- #####cal *YYYY*
+ ##### cal *YYYY*
  Display Calender of all months of the specified year.
  
- #####cal -3
+ ##### cal -3
  Display Calendar of previous, current and next month.
  
- ###date Commands
+ ### date Commands
  
- #####date 
+ ##### date 
  Shows current date.
  
- #####date --set=*'DD month_name Year HH:MM'*
+ ##### date --set=*'DD month_name Year HH:MM'*
  Sets the given date.
  
- ###cat commands
+ ### cat commands
  
- #####cat *file_name*
+ ##### cat *file_name*
  View a single file.
   
- #####cat *file_name1* *file_name2*
+ ##### cat *file_name1* *file_name2*
  View two or more files.
  
- #####cat -n *file_name*
+ ##### cat -n *file_name*
  View contents of file with line numbers.
  
- #####cat >*file_name*
+ ##### cat >*file_name*
  Create file.
  
- #####cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
+ ##### cat [filename-whose-contents-is-to-be-copied] > [destination-filename]
  Copy contents of one file to another.
  
- #####cat -s *file_name*
+ ##### cat -s *file_name*
 append the contents of one file to the end of another file. Eliminate all empty lines in file.
  
- #####cat *file_name1*>>*file_name2*
+ ##### cat *file_name1*>>*file_name2*
  Append the contents of one file to the end of another file.
  
- #####tac *file_name*
+ ##### tac *file_name*
  Display Contents of file in reverse order.
  
- #####cat -A *file_name*
+ ##### cat -A *file_name*
  Uses -v,-E,-T option together.
  
- ###cp command
+ ### cp command
  
- #####cp *SOURCE_PATH* *file_name* *DEST_PATH*
+ ##### cp *SOURCE_PATH* *file_name* *DEST_PATH*
  Copies files from Source to destination.
  
- ###mv command
+ ### mv command
  
- #####mv *SOURCE_PATH* *file_name* *DEST_PATH*
+ ##### mv *SOURCE_PATH* *file_name* *DEST_PATH*
  Moves files from Source to destination.
  
- ###pwd command
+ ### pwd command
  
- #####pwd
+ ##### pwd
  Prints working Directory.
  
- ###cd commands
+ ### cd commands
  
- #####cd *file_name*/*PATH*
+ ##### cd *file_name*/*PATH*
  Access the following file present at a PATH.
  
- ##Shows various Intermediate level Commands
+ ## Shows various Intermediate level Commands
  
- ###find commands
+ ### find commands
  
- #####find ./*directory_name* -name '*file_name*'
+ ##### find ./*directory_name* -name '*file_name*'
  Search for the given file in the specified directory.
  
- #####find ./*directory_name* -name '**extension_type*'
+ ##### find ./*directory_name* -name '**extension_type*'
  Searches for a specified extension of a file.
  
- #####find ./*directory_name* -name '*file_name*' -exec rm -i {} \;
+ ##### find ./*directory_name* -name '*file_name*' -exec rm -i {} \;
  Find and delete a file with confirmation.
  
- #####find ./*directory_name* -empty
+ ##### find ./*directory_name* -empty
  Find all empty folders and files in the mentioned directory.
  
- #####find ./*directory_name* -perm *absolute_code*
+ ##### find ./*directory_name* -perm *absolute_code*
  Absolute code can be a combination of 4-Read, 2-Write, 1-Execute, 0-no permission
  Command is used to display files which satisfy the Access specified in *absolude code*
  
- #####find ./ -type f -name "*.*extension_type*" -exec grep '*Search Keyword*'  {} \;
+ ##### find ./ -type f -name "*.*extension_type*" -exec grep '*Search Keyword*'  {} \;
  Searches for a Specific keyword in file and prints the lines where the keyword exists.
  
- ###grep commands
+ ### grep commands
  
- #####grep -i "*Search_keyword*" *file_name.txt*
+ ##### grep -i "*Search_keyword*" *file_name.txt*
  Performs a Case insensitive search for the keyword in the specified file
  
- #####grep -c "*Search_keyword*" *file_name.txt*
+ ##### grep -c "*Search_keyword*" *file_name.txt*
  Displays the number of lines which has the *Search_keyword*
  
- #####grep -l "*Search_keyword*" *
+ ##### grep -l "*Search_keyword*" *
  Display the file names that matches the *Search_keyword*
  
- #####grep -w "*Search_keyword*" *file_name.txt*
+ ##### grep -w "*Search_keyword*" *file_name.txt*
  Display the files having the *Search_keyword* as a Substring.
  
- #####grep -o "*Search_keyword*" *file_name.txt*
+ ##### grep -o "*Search_keyword*" *file_name.txt*
  Displays only the matched pattern.
  
- #####grep -n "*Search_keyword*" *file_name.txt*
+ ##### grep -n "*Search_keyword*" *file_name.txt*
  Shows the line number of file with the line Matched.
  
- #####grep -v "*Search_keyword*" *file_name.txt*
+ ##### grep -v "*Search_keyword*" *file_name.txt*
  Display the lines that are not matched with the specified *Search_Keyword*.
  
- #####grep "*^Search_keyword*" *file_name.txt*
+ ##### grep "*^Search_keyword*" *file_name.txt*
  Displays the lines starting with *Search_keyword*
  
- #####grep –e "*Search_keyword1*" –e "*Search_keyword2*" –e "*Search_keyword3*" *file_name.txt*
+ ##### grep –e "*Search_keyword1*" –e "*Search_keyword2*" –e "*Search_keyword3*" *file_name.txt*
  Accepts multiple *Search_keyword* in the file at a time.
  
- #####grep -f "*Search_file.txt*" *file_name.txt*
+ ##### grep -f "*Search_file.txt*" *file_name.txt*
  Takes patterns from file, one per line.
  
- ###man commands
+ ### man commands
  
- #####```man <command_name>```
+ ##### ```man <command_name>```
  Manual pages of the command are simply returned.
  
- #####```man <section_num> <command_name>```
+ ##### ```man <section_num> <command_name>```
  Used to display only a specific section of a manual.
  
- #####```man -f <command_name>```
+ ##### ```man -f <command_name>```
  Lists the section in which the *command_name* exists.
  
- #####```man -a <command_name>```
+ ##### ```man -a <command_name>```
  Display all the available manual pages of the specified *command_name* in succession.
 
- #####```man -k <command_name>```
+ ##### ```man -k <command_name>```
  Searches the given command as a regular expression in all the manuals and it returns the manual pages with the section number in which it is found.
  
- #####```man -w <command_name>```
+ ##### ```man -w <command_name>```
  Returns the location in which the manual page of a given command is present.
  
- #####```man -I <command_name>```
+ ##### ```man -I <command_name>```
  Considers the command as case sensitive.
  
- ###ps commands
+ ### ps commands
  
- #####```ps```
+ ##### ```ps```
  Shows the processes for the current shell.
  
- #####```ps -A```
+ ##### ```ps -A```
  View all the running processes.
  
- #####```ps -a```
+ ##### ```ps -a```
  Views processes not associated with the terminal and session leaders.
  
- #####```ps -d```
+ ##### ```ps -d```
  View all the processes except the session leaders.
  
- #####```ps -a -N```
+ ##### ```ps -a -N```
  View only the processes related to the session leader and process not associated with the terminal.
  -N is just used to negate a command.
  
- #####```ps -T```
+ ##### ```ps -T```
  View process associated with terminal.
  
- #####```ps -r```
+ ##### ```ps -r```
  View all running processes.
  
- #####```ps -x```
+ ##### ```ps -x```
  View all processes owned by you.
  
- ###kill commands
+ ### kill commands
  
- #####```kill -l```
+ ##### ```kill -l```
  Display all the available signals.
  
- #####```kill pid```
+ ##### ```kill pid```
  kill a process using it's Process ID.
  
- #####```kill {-signal | -s signal} pid``` 
+ ##### ```kill {-signal | -s signal} pid``` 
  Send signal to Process.
  
- #####```kill {-l | --list[=signal] | -L | --table}``` 
+ ##### ```kill {-l | --list[=signal] | -L | --table}``` 
  Used to list available signals in a table format.
  
- ###whereis commands
- ####```whereis <directory_name> -f <file_name>```
- #####-b
+ ### whereis commands
+ #### ```whereis <directory_name> -f <file_name>```
+ ##### -b
  Search only for binaries.
  
- #####-m
+ ##### -m
  Search for manual sections.
  
- #####-s
+ ##### -s
  Search only for sources.
  
- #####-u
+ ##### -u
  Search for unusual entries.
  
- #####-B
+ ##### -B
  Change or otherwise limit the places where whereis searches for binaries.
  
- #####-M
+ ##### -M
  Change or otherwise limit the places where whereis searches for manual sections.
  
- #####-S
+ ##### -S
  Change or otherwise limit the places where whereis searches for sources.
  
- #####-f
+ ##### -f
  Terminate the last directory list and signals the start of file names, and must be used when any of the -B, -M, or -S options are used.
  
  Eg-
@@ -570,26 +570,26 @@ append the contents of one file to the end of another file. Eliminate all empty 
  2.```whereis``` -u -M /usr/man/man1 -S /usr/src -f *
    Find all files in the current directory that are not documented in /usr/man/man1, whose source resides in /usr/src.
  
- ###service commands
+ ### service commands
  
- #####```service <SCRIPT-Name> stop```
+ ##### ```service <SCRIPT-Name> stop```
  Used to stop a service.
  
- #####```service <SCRIPT-Name> start```
+ ##### ```service <SCRIPT-Name> start```
  Used to start a service.
  
- #####```service <SCRIPT-Name> status```
+ ##### ```service <SCRIPT-Name> status```
  Used to know the status of a service.
  
- #####```service <SCRIPT-Name> restart```
+ ##### ```service <SCRIPT-Name> restart```
  Used to start a service again.
  
- ###df commands
+ ### df commands
  
- #####```df *OPTION* *FILE*```
+ ##### ```df *OPTION* *FILE*```
  Used to display total space and available space.
  
- #####options for df commands
+ ##### options for df commands
  
  -a, –all : includes pseudo, duplicate and inaccessible file systems.
  
@@ -621,11 +621,11 @@ append the contents of one file to the end of another file. Eliminate all empty 
  
  -T, –print-type : print file system type 
  
- ###du commands
+ ### du commands
  
- #####```du <directory_name>```
+ ##### ```du <directory_name>```
  
- #####Options for du
+ ##### Options for du
  -0, –null : end each output line with NULL
  
  -a, –all : write count of all files, not just directories
@@ -648,29 +648,29 @@ append the contents of one file to the end of another file. Eliminate all empty 
  
  –exclude=PATTERN : exclude files that match PATTERN 
  
- ###rm commands
+ ### rm commands
  
- #####```rm -i <file_name>```
+ ##### ```rm -i <file_name>```
  Asks the user for confirmation before deleting each file.
  
- #####```rm -f <file_name>```
+ ##### ```rm -f <file_name>```
  Prompts for file deletion if a file is write protected.
  
- #####```rm -r <file_name>```
+ ##### ```rm -r <file_name>```
  Performs a tree-walk and will delete all the files and sub-directories recursively of the parent directory.
  
- #####```rm --version```
+ ##### ```rm --version```
  Specified the version of rm
  
- #####```rm -- -<file_name>```
+ ##### ```rm -- -<file_name>```
  Remove a file whose name begins with a dash (“-“).
  
- ###echo commands
+ ### echo commands
  
- #####```echo "String"```
+ ##### ```echo "String"```
  Prints a simple String.
  
- #####Options in Echo command
+ ##### Options in Echo command
  -e:Here enables the interpretation of backslash escapes. \n can be used for new line, \c can be used for eliminating the code after \c. \t acb be used for creating tab spaces in string.\r can be used
  
  Example:
@@ -685,7 +685,7 @@ append the contents of one file to the end of another file. Eliminate all empty 
  
  ###passwd commands
  
- #####passwd <options> <username> 
+ ##### passwd <options> <username> 
  -d, –delete: This option deletes the user password and makes the account password-less.
  
  -e, –expire: This option immediately expires the account password and forces the user to change password on their next login. 
@@ -715,11 +715,11 @@ append the contents of one file to the end of another file. Eliminate all empty 
  -x, –maxdays MAX_DAYS Set the maximum number of days for which the password remains valid. After MAX_DAYS, the password will expire and the user will be forced to change password.
  
  
- ###cmp commands
+ ### cmp commands
 
 ```cmp <option> <file1> <file2>```
 
-#####options for cmp commands
+##### options for cmp commands
 -b(print-bytes) : If you want cmp displays the differing bytes in the output when used with -b option.
 
 -i [bytes-to-be-skipped] : This option when used with cmp command helps to skip a particular number of initial bytes from both the files and then after skipping it compares the files. This can be done by specifying the number of bytes as argument to the -i command line option.
@@ -734,45 +734,45 @@ append the contents of one file to the end of another file. Eliminate all empty 
 
  – -help option : This displays a help message and exits.
  
- ###wget commands
+ ### wget commands
  
- #####```wget <download link>```
+ ##### ```wget <download link>```
  Downloads the file given at the link.
  
- #####```wget -o <file_name required by user> <download_link>```
+ ##### ```wget -o <file_name required by user> <download_link>```
  Downloads the file with specified name by user.
  
- #####```wget <http_link> <ftp_link>```
+ ##### ```wget <http_link> <ftp_link>```
  Downloads files from http and ftp link at once.
  
- #####```wget -i <file_path>`` 
+ ##### ```wget -i <file_path>`` 
  Reads URL from a file.
  
- #####```wget -c <download_link>```
+ ##### ```wget -c <download_link>```
  Resumes an incomplete download.
  
- #####```wget -b <download_link>```
+ ##### ```wget -b <download_link>```
  Downloads the file in background.
  
- #####```wget --limit-rate=<kbps> <download_link> ```
+ ##### ```wget --limit-rate=<kbps> <download_link> ```
  Limits the download speed of the specified file.
  
- #####```wget --http-user=<Username> --http-password=<password> <download_link>```
+ ##### ```wget --http-user=<Username> --http-password=<password> <download_link>```
  Used to download password restricted http in which ```--http-user``` and ```--http-password``` will be defined by the URL and specified in the command by the user.
  
- #####```wget --ftp-user=<Username> --ftp-password=<password> <download_link>```
+ ##### ```wget --ftp-user=<Username> --ftp-password=<password> <download_link>```
  Used to download password restricted ftp in which ```--http-user``` and ```--http-password``` will be defined by the URL and specified in the command by the user.
 
- #####```wget --version```
+ ##### ```wget --version```
  Display version of wget.
  
- #####```wget --help```
+ ##### ```wget --help```
  Display help for wget
  
- ###gcc/g++ commands
+ ### gcc/g++ commands
  ```gcc -c|-S|-E -std=standard```
  
- ####Options for gcc commands
+ #### Options for gcc commands
  
  -o opt: This will compile the source.c file but instead of giving default name hence executed using ./opt, it will give output file as opt. -o is for output file option. 
          Example: ```gcc program.c -o opt```
@@ -791,39 +791,39 @@ append the contents of one file to the end of another file. Eliminate all empty 
  
  -v: Used for the verbose purpose.
  
- ###ifconfig commands
+ ### ifconfig commands
  
- #####```ifconfig```
+ ##### ```ifconfig```
  Displays all the active interfaces in detail.
  
- #####```ifconfig -a```
+ ##### ```ifconfig -a```
  Displays all active as well as inactive interfaces on server.
  
- #####```ifconfig <name_of_interface>```
+ ##### ```ifconfig <name_of_interface>```
  Used to display a specific interface.
  
- #####```ifconfig <name_of_interface> up```
+ ##### ```ifconfig <name_of_interface> up```
  Used to activate an interface.
  
- #####```ifconfig <name_of_interface> down```
+ ##### ```ifconfig <name_of_interface> down```
  Used to deactivate an interface.
  
- #####```ifconfig <name_of_interface> <IP_Address>```
+ ##### ```ifconfig <name_of_interface> <IP_Address>```
  Assign IP address to a specified interface.
  
- #####```ifconfig <name_of_interface> netmask <Network_mask>```
+ ##### ```ifconfig <name_of_interface> netmask <Network_mask>```
  Assign a Network Mask to a specified interface.
  
- #####```ifconfig <name_of_interface> broadcast <Broadcast_address>```  
+ ##### ```ifconfig <name_of_interface> broadcast <Broadcast_address>```  
  Assign a Broadcast address to the specified interface.
  
- #####```ifconfig <name_of_interface> <IP_Address> netmask <Network_mask> broadcast <Broadcast_address>```
+ ##### ```ifconfig <name_of_interface> <IP_Address> netmask <Network_mask> broadcast <Broadcast_address>```
  Assign IP,Netmask and Broadcast to an interface.
  
- #####```ifconfig <name_of_interface> mtu <Max_Transmission_Unit>```
+ ##### ```ifconfig <name_of_interface> mtu <Max_Transmission_Unit>```
  Set the MTU for the interface specified by the user.
  
- ####Other Networking Utilities
+ #### Other Networking Utilities
  tcmpdump- It is a command-line packet capture and analyzer tool for monitoring network traffic.
  
  Wireshark- An open source network protocol analyzer that is used to troubleshoot network related issues.
@@ -832,137 +832,137 @@ append the contents of one file to the end of another file. Eliminate all empty 
  
  Cacti- Complete web based monitoring and graphing application for network monitoring. 
 
- ###netstat commands
+ ### netstat commands
  
- #####```netstat -a|more```
+ ##### ```netstat -a|more```
  Show Listening and non-listening Sockets.
  
- #####```netstat -at```
+ ##### ```netstat -at```
  List all TCP ports.
  
- #####```netstat -au```
+ ##### ```netstat -au```
  List all UDP ports.
  
- #####```netstat -l```
+ ##### ```netstat -l```
  List all listening ports.
  
- #####```netstat -lt```
+ ##### ```netstat -lt```
  List all listening TCP ports.
  
- #####```netstat -lu```
+ ##### ```netstat -lu```
  List all listening UDP ports.
  
- #####```netstat -lx```
+ ##### ```netstat -lx```
  List only the listening UNIX ports.
  
- #####```netstat -s```
+ ##### ```netstat -s```
  List Statistics for all ports.
  
- #####```netstat -st(TCP)```
+ ##### ```netstat -st(TCP)```
  List Statistics for TCP ports. 
 
- #####```netstat -su(UDP)```
+ ##### ```netstat -su(UDP)```
  List Statistics for UDP ports.
 
- #####```netstat -pt```
+ ##### ```netstat -pt```
  Display PID and program names.
  
- #####```netstat -c```
+ ##### ```netstat -c```
  Prints Netstat Information continuously.
  
- #####```netstat -verbose```
+ ##### ```netstat -verbose```
  Gets the non-supportive address families in the system.
  
- #####```netstat -r```
+ ##### ```netstat -r```
  Get the Kernel routing information.
  
- #####```netstat -ap | grep <protocol_name>```
+ ##### ```netstat -ap | grep <protocol_name>```
  Get the port on which program is running.
 
-#####```netstat -an | grep :<port_no> ```
+##### ```netstat -an | grep :<port_no> ```
 Get the process which is using the specified port.
 
-#####```netstat -i```
+##### ```netstat -i```
 List of Network interfaces.
 
-#####```netstat -ie```
+##### ```netstat -ie```
 Dipslay interfaces in detail.
 
-###nslookup commands
+### nslookup commands
 
-#####```nslookup <domain>```
+##### ```nslookup <domain>```
 Displays 'A' record of specified domain.
 
-#####```nslookup <Address>
+##### ```nslookup <Address>
 Display reverse domain lookup
 
-#####```nslookup <name>```
+##### ```nslookup <name>```
 Display Specific domain lookup.
 
-#####```nslookup -query=mx <URL>```
+##### ```nslookup -query=mx <URL>```
 To Query mail exchange record.
 
-#####```nslookup -query=ns <URL>```
+##### ```nslookup -query=ns <URL>```
 To query Name Server Record.
 
-#####```nslookup -type=soa <URL>```
+##### ```nslookup -type=soa <URL>```
 To query Start Of Authority Record.
 
-#####```nslookup -query=any <domain>```
+##### ```nslookup -query=any <domain>```
 To query all Available DNS Records.
 
-#####```nslookup -debug <Domain>```
+##### ```nslookup -debug <Domain>```
 Enable debug mode.
 
-###dig commands 
+### dig commands 
 
-#####```dig <domain>```
+##### ```dig <domain>```
 Query Domain “A” Record.
 
-#####```dig <domain> +short```
+##### ```dig <domain> +short```
 Query Domain “A” Record with +short.
 
-#####```dig <domain> MX```
+##### ```dig <domain> MX```
 Querying MX Record for Domain.
 
-#####```dig <domain> SOA```
+##### ```dig <domain> SOA```
 Querying SOA Record for Domain.
 
-#####```dig <domain> TTL```
+##### ```dig <domain> TTL```
 Querying TTL Record for Domain.
 
-#####```dig <domain> +nocomments +noquestion +noauthority +noadditional +nostats```
+##### ```dig <domain> +nocomments +noquestion +noauthority +noadditional +nostats```
 Querying only answer section.
 
-#####```dig <domain> ANY +noall +answer```
+##### ```dig <domain> ANY +noall +answer```
 Querying ALL DNS Records Types.
 
-#####```dig -x <Address> +short```
+##### ```dig -x <Address> +short```
 DNS Reverse lookup.
 
-#####```dig <Domain> mx +noall +answer redhat.com ns +noall +answer```
+##### ```dig <Domain> mx +noall +answer redhat.com ns +noall +answer```
 Querying Multiple DNS Records.
 
-###uptime commands
+### uptime commands
 
 ```uptime -<options>```
 
-#####```uptime -p```
+##### ```uptime -p```
 Shows th PC wakeup time on human Readable format.
 
-#####```uptime -s```
+##### ```uptime -s```
 Display the time/date since when the system has been running.
 
-#####```uptime -V```
+##### ```uptime -V```
 Display Version Information.
 
-#####```uptime -h```
+##### ```uptime -h```
 Display help for uptime commands.
 
-###wall commands
+### wall commands
 ```wall <filename>```
 
-#####Options for wall
+##### Options for wall
 -n,--nobanner: Suppress banner.
 
 
@@ -972,20 +972,20 @@ Display help for uptime commands.
 
 -h,--help: Display Help message.
 
-#####mesg commands
+##### mesg commands
 
-#####```mesg y```
+##### ```mesg y```
 Allow other users to send you messages.
 
-#####```mesg n```
+##### ```mesg n```
 Disallow other users to send you messages.
 
-#####```mesg```
+##### ```mesg```
 Display current status of the terminal.
 
-###talk commands
+### talk commands
 
-#####Options in talk command
+##### Options in talk command
 person: If you wish to talk to someone on your own machine, then person is just the person's login name.  If you wish
         to talk to a user on another host, then person is of the form ‘user@host’ ( or ‘host.user’ or ‘host!user’ or
         ‘host:user’ ).
@@ -996,9 +996,9 @@ person: If you wish to talk to someone on your own machine, then person is just 
 ttyname: If you wish to talk to a user who is logged in more than once, the ttyname argument may be used to indicate
          the appropriate terminal name, where ttyname is of the form ‘ttyXX’ or ‘pts/X’.
 
-###w command
+### w command
 
-#####options for w command
+##### options for w command
 -h, --no-header: Don't print the header.
 
 -u, --no-current: Ignores the username while figuring out the current process and cpu times. (To see an example of this, switch to   			  the root user with "su" and then run both "w" and "w -u".)
@@ -1015,10 +1015,10 @@ ttyname: If you wish to talk to a user who is logged in more than once, the ttyn
 
 user: Show information about the specified the user only.
 
-###rename commands
+### rename commands
 rename <file_name>
 
-#####Options for remove command
+##### Options for remove command
 
 -v,--verbose: Print names of files succesfully renamed.
 
@@ -1026,21 +1026,19 @@ rename <file_name>
 
 -f,--force: Overwrite existing files.
 
-###top commands
+### top commands
 
-#####```top```
-Shows th Ongoing processes.
+##### ```top```
+Shows the Ongoing processes.
 
-#####```top -u <process_name>```
-Shows th processes related to specified process name.
+##### ```top -u <process_name>```
+Shows the processes related to specified process name.
 
-#####```top -n 1 -b > <file_name.txt>```
+##### ```top -n 1 -b > <file_name.txt>```
 Saves the top command result in the file.
 
-#####```top --help```
+##### ```top --help```
 Display top command help.
 
-#####top -n <repetition_value>
+##### top -n <repetition_value>
 Exit top command after specific repetition.
-
-  
